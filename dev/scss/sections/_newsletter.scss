@@ -4,28 +4,44 @@
 @use "../helpers";
 
 #newsletter{
-    background-color: var(--lilyWhite);
+    padding: 40px 24px;
+    
+    #newsletter-content{
+        background-color: var(--lilyWhite);
+        padding: 60px 16px;
 
-    p{
-        color: var(--grey);
-        font-weight: 600;
-        line-height: helpers.rem-calc(28);
-    }
-
-    form{
-
-        input{
-            border: none;
+        p{
             color: var(--grey);
             font-weight: 600;
+            line-height: helpers.rem-calc(28);
+            margin: 16px 0px;
         }
 
-        button{
-            border: none;
-            background-color: var(--nightBlue);
-            color: var(--white);
-            font-weight: 600;
-            font-size: helpers.rem-calc(14);
+        form{
+
+            input{
+                border: none;
+                color: var(--grey);
+                font-weight: 600;
+                width: 100%;
+                padding: 24px 8px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-bottom: 16px;
+            }
+
+            ::placeholder{
+                color:var(--grey);
+                opacity: 1;
+            }
+
+                ::-ms-input-placeholder{
+                    color: var(--grey);
+                }
+        }
+
+        aside{
+            display: none;
         }
     }
 }
