@@ -435,3 +435,25 @@ textarea {
 #packages #package-card-container .selected {
   background-color: var(--white);
 }
+
+/* =============
+    Newsletter
+============= */
+#newsletter {
+  background-color: var(--lilyWhite);
+}
+#newsletter h1 {
+  color: var(--nightBlue);
+}
+#newsletter p {
+  color: var(--grey);
+}
+#newsletter form input {
+  border: none;
+  color: var(--grey);
+}
+#newsletter form button {
+  border: none;
+  background-color: var(--nightBlue);
+  color: var(--white);
+}
