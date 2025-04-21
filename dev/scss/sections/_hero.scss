@@ -1,0 +1,46 @@
+/* =============
+    Hero
+============= */
+@use "../helpers";
+
+#hero{
+    background-color: var(--lilyWhite);
+
+    section{
+
+        article{
+            h1{
+                color: var(--nightBlue);
+            }
+
+            p{
+                color: var(--grey);
+            }
+
+            a:link, a:visited{
+                background-color: var(--nightBlue);
+                color: var(--white);
+            }
+            a:hover, a:focus{
+                
+            }
+
+            button{
+                background-color: var(white);
+                border: none;
+            }
+        }
+
+        #hero-card{
+            background-color: var(--snowDrop);
+
+            h5{
+                color: var(--nightBlue);
+            }
+        }
+    }
+
+    aside{
+
+    }
+}
