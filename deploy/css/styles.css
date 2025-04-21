@@ -338,9 +338,23 @@ html {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title {
+  color: var(--nightBlue);
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+}
+
 /* =============
     Buttons
 ============= */
+a {
+  text-decoration: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -376,15 +390,16 @@ textarea {
 #hero {
   background-color: var(--lilyWhite);
 }
-#hero section article h1 {
-  color: var(--nightBlue);
-}
 #hero section article p {
   color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 #hero section article a:link, #hero section article a:visited {
   background-color: var(--nightBlue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 #hero section article button {
   background-color: var(white);
@@ -395,15 +410,19 @@ textarea {
 }
 #hero section #hero-card h5 {
   color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+#hero section #hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 /* =============
     Packages
 ============= */
 #packages {
   background-color: var(--lilyWhite);
-}
-#packages h1 {
-  color: var(--nightBlue);
 }
 #packages #package-button-container {
   background-color: var(--white);
@@ -441,9 +460,6 @@ textarea {
 ============= */
 #newsletter {
   background-color: var(--lilyWhite);
-}
-#newsletter h1 {
-  color: var(--nightBlue);
 }
 #newsletter p {
   color: var(--grey);
