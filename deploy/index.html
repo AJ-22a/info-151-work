@@ -34,15 +34,18 @@
         <img src="img/hero/hero-right.png" alt="image of a happy person" class="img-scaler">
     </aside>
     
-</section><section>
+</section><section id="packages">
 
     <h1>Popular packages</h1>
     <img src="img/global/green-icon.svg" alt="green icon">
-    <button><i class="fa-solid fa-chevron-left"></i></button>
-    <button><i class="fa-solid fa-chevron-right"></i></button>
 
-    <ul>
-        <li>
+    <div id="package-button-container">
+        <button id="left-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="right-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <ul id="package-card-container">
+        <li class="package-card">
             <img src="img/packages/card-1.jpg" alt="people at a coffee shop" class="img-scaler">
             <p>The basic package to start your promotion</p>
             <ul>
@@ -54,7 +57,7 @@
             <h3>$89.00</h3>
         </li>
 
-        <li>
+        <li class="selected package-card">
             <img src="img/packages/card-3.jpg" alt="people at a coffee shop" class="img-scaler">
             <p>The standard package to grow your business</p>
             <ul>
@@ -66,7 +69,7 @@
             <h3>$109.00</h3>
         </li>
 
-        <li>
+        <li class="package-card">
             <img src="img/packages/card-2.jpg" alt="people at a coffee shop" class="img-scaler">
             <p>The premium package to boost your promotion</p>
             <ul>
