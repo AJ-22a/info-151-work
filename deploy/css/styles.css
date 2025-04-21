@@ -574,3 +574,80 @@ textarea {
 #newsletter #newsletter-content aside {
   display: none;
 }
+
+/* =============
+    Communication
+============= */
+#communication {
+  margin: 108px 24px;
+  text-align: center;
+}
+#communication h1 {
+  margin-bottom: 16px;
+}
+#communication p {
+  margin-bottom: 48px;
+  color: var(--grey);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+/* =============
+    Process
+============= */
+#process {
+  text-align: center;
+  margin: 110px 24px;
+}
+#process h1 {
+  margin-bottom: 16px;
+}
+#process p {
+  color: var(--grey);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+#process ul li {
+  border: 1px solid var(--ghostWhite);
+  margin-top: 24px;
+  padding: 30px;
+}
+#process ul li img {
+  margin-bottom: 50px;
+}
+#process ul li h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.125rem;
+  margin-bottom: 10px;
+  color: var(--nightBlue);
+}
+/* =============
+    About
+============= */
+#about {
+  margin: 60px 24px;
+}
+#about h1 {
+  margin-bottom: 16px;
+}
+#about p {
+  color: var(--grey);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+#about #about-content ul li {
+  margin-top: 16px;
+}
+#about #about-content ul li h3 {
+  color: var(--nightBlue);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 28px;
+}
+#about .about-img {
+  margin-top: 68px;
+}

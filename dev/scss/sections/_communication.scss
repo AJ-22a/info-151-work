@@ -1,0 +1,21 @@
+/* =============
+    Communication
+============= */
+@use "../helpers";
+
+#communication{
+    margin: 108px 24px;
+    text-align: center;
+    
+    h1{
+        margin-bottom: 16px;
+    }
+
+    p{
+        margin-bottom: 48px;
+        color: var(--grey);
+        font-size: helpers.rem-calc(16);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+    }
+}
