@@ -444,12 +444,21 @@ textarea {
 }
 #packages #package-card-container .package-card p {
   color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container .package-card h4 {
   color: var(--grey);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container .package-card h3 {
   color: var(--aqua);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
 }
 #packages #package-card-container .selected {
   background-color: var(--white);
@@ -463,13 +472,18 @@ textarea {
 }
 #newsletter p {
   color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
 }
 #newsletter form input {
   border: none;
   color: var(--grey);
+  font-weight: 600;
 }
 #newsletter form button {
   border: none;
   background-color: var(--nightBlue);
   color: var(--white);
+  font-weight: 600;
+  font-size: 0.875rem;
 }
