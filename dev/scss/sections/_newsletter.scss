@@ -4,40 +4,79 @@
 @use "../helpers";
 
 #newsletter{
+
+    margin-bottom: 100px;
     
     #newsletter-content{
         background-color: var(--lilyWhite);
         padding: 60px 16px;
 
-        p{
-            margin: 16px 0px;
+        @include helpers.md{
+            padding: 60px 20vw;
         }
 
-        form{
+        @include helpers.lg{
+            display: grid;
+            padding: 0px 0px;
+            grid-template-columns: 65% auto;
+            gap: 60px;
+        }
 
-            input{
-                border: none;
-                color: var(--grey);
-                font-weight: 600;
-                width: 100%;
-                padding: 24px 8px;
-                box-sizing: border-box;
-                border-radius: 8px;
-                margin-bottom: 16px;
+        @include helpers.xl{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #newsletter-left{
+
+            @include helpers.lg{
+                padding: 60px 0px 60px 60px;
             }
 
-            ::placeholder{
-                color:var(--grey);
-                opacity: 1;
+            p{
+                margin: 16px 0px;
             }
+
+            form{
+
+                input{
+                    border: none;
+                    color: var(--grey);
+                    font-weight: 600;
+                    width: 100%;
+                    padding: 24px 8px;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+
+                ::placeholder{
+                    color:var(--grey);
+                    opacity: 1;
+                }
 
                 ::-ms-input-placeholder{
-                    color: var(--grey);
+                        color: var(--grey);
                 }
+
+                div{
+                    text-align: right;
+                }
+            }
         }
 
         aside{
             display: none;
+
+            @include helpers.lg{
+                display: block;
+                margin-top: -50px;
+            }
+
+            img {
+                // margin-top: -120px;
+                // object-fit: cover;
+            }
         }
     }
 }

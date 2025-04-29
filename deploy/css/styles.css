@@ -667,14 +667,43 @@ textarea {
 /* =============
     Newsletter
 ============= */
+#newsletter {
+  margin-bottom: 100px;
+}
 #newsletter #newsletter-content {
   background-color: var(--lilyWhite);
   padding: 60px 16px;
 }
-#newsletter #newsletter-content p {
+@media (min-width: 768px) {
+  #newsletter #newsletter-content {
+    padding: 60px 20vw;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content {
+    display: -ms-grid;
+    display: grid;
+    padding: 0px 0px;
+    -ms-grid-columns: 65% 60px auto;
+    grid-template-columns: 65% auto;
+    gap: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #newsletter #newsletter-content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content #newsletter-left {
+    padding: 60px 0px 60px 60px;
+  }
+}
+#newsletter #newsletter-content #newsletter-left p {
   margin: 16px 0px;
 }
-#newsletter #newsletter-content form input {
+#newsletter #newsletter-content #newsletter-left form input {
   border: none;
   color: var(--grey);
   font-weight: 600;
@@ -685,33 +714,41 @@ textarea {
   border-radius: 8px;
   margin-bottom: 16px;
 }
-#newsletter #newsletter-content form ::-webkit-input-placeholder {
+#newsletter #newsletter-content #newsletter-left form ::-webkit-input-placeholder {
   color: var(--grey);
   opacity: 1;
 }
-#newsletter #newsletter-content form ::-moz-placeholder {
+#newsletter #newsletter-content #newsletter-left form ::-moz-placeholder {
   color: var(--grey);
   opacity: 1;
 }
-#newsletter #newsletter-content form :-ms-input-placeholder {
+#newsletter #newsletter-content #newsletter-left form :-ms-input-placeholder {
   color: var(--grey);
   opacity: 1;
 }
-#newsletter #newsletter-content form ::-ms-input-placeholder {
+#newsletter #newsletter-content #newsletter-left form ::-ms-input-placeholder {
   color: var(--grey);
   opacity: 1;
 }
-#newsletter #newsletter-content form ::placeholder {
+#newsletter #newsletter-content #newsletter-left form ::placeholder {
   color: var(--grey);
   opacity: 1;
 }
-#newsletter #newsletter-content form ::-ms-input-placeholder {
+#newsletter #newsletter-content #newsletter-left form ::-ms-input-placeholder {
   color: var(--grey);
+}
+#newsletter #newsletter-content #newsletter-left form div {
+  text-align: right;
 }
 #newsletter #newsletter-content aside {
   display: none;
 }
-
+@media (min-width: 992px) {
+  #newsletter #newsletter-content aside {
+    display: block;
+    margin-top: -50px;
+  }
+}
 /* =============
     Communication
 ============= */
