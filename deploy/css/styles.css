@@ -957,8 +957,37 @@ textarea {
 #about {
   padding: 40px 24px;
 }
+@media (min-width: 992px) {
+  #about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #about {
+    width: 1200px;
+    margin: 0px auto;
+  }
+}
 #about section .about-p {
-  margin: 24px 0px 48px;
+  margin: 24px 0px 40px;
+}
+@media (min-width: 768px) {
+  #about section ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 16px auto;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #about section ul {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 #about section ul li h2 {
   color: var(--nightBlue);
