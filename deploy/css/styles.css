@@ -676,7 +676,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #newsletter #newsletter-content {
-    padding: 60px 20vw;
+    padding: 60px 15vw;
   }
 }
 @media (min-width: 992px) {
@@ -755,8 +755,26 @@ textarea {
 #communication {
   text-align: center;
 }
-#communication p {
+@media (min-width: 992px) {
+  #communication #communication-content {
+    width: 992px;
+    margin: 0px auto;
+  }
+}
+#communication #communication-content p {
   margin: 24px 0px 48px;
+}
+@media (min-width: 768px) {
+  #communication #communication-content p {
+    padding: 0px 8vw;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  #communication #communication-img {
+    width: 1200px;
+    margin: 0px auto;
+  }
 }
 
 /* =============

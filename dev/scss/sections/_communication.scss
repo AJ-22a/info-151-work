@@ -5,8 +5,29 @@
 
 #communication{
     text-align: center;
+    
+    #communication-content{
 
-    p{
-        margin: 24px 0px 48px;
+        @include helpers.lg{
+            width: 992px;
+            margin: 0px auto;
+        }
+
+        p{
+            margin: 24px 0px 48px;
+
+            @include helpers.md{
+                padding: 0px 8vw;
+                margin-bottom: 24px;
+            }
+        }
     }
+
+    #communication-img{
+        @include helpers.xl{
+            width: 1200px;
+            margin: 0px auto;
+        }
+    }
+    
 }
