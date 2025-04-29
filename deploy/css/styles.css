@@ -356,6 +356,11 @@ ul li {
 .content-padding {
   padding: 40px 24px;
 }
+@media (min-width: 1200px) {
+  .content-padding {
+    padding: 100px 24px;
+  }
+}
 
 /* =============
     Typography
@@ -439,11 +444,48 @@ textarea {
   background-color: var(--lilyWhite);
   padding: 56px 24px;
 }
-#hero section article p {
+@media (min-width: 1200px) {
+  #hero {
+    padding: 100px 24px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "hero-img" "hero-content";
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "hero-content hero-img";
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container section {
+    grid-area: hero-content;
+    padding: 0px 15vw;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-content-container section {
+    padding: 0px 25vw;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container section {
+    padding: 0px;
+  }
+}
+#hero #hero-content-container section article p {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-#hero section article button {
+#hero #hero-content-container section article button {
   background-color: var(white);
   border: none;
   height: 60px;
@@ -451,21 +493,47 @@ textarea {
   border-radius: 100%;
   margin-left: 30px;
 }
-#hero section #hero-card {
+#hero #hero-content-container section #hero-card {
   background-color: var(--snowDrop);
   margin-top: 70px;
   padding: 24px 20px;
   border-radius: 12px;
 }
-#hero section #hero-card h5 {
+#hero #hero-content-container section #hero-card h5 {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 0.875rem;
 }
-#hero section #hero-card p {
+#hero #hero-content-container section #hero-card p {
   font-size: 0.875rem;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  #hero #hero-content-container aside {
+    grid-area: hero-img;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-content-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-content-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+
 /* =============
     Packages
 ============= */

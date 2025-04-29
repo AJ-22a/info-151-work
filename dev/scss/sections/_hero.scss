@@ -7,61 +7,99 @@
     background-color: var(--lilyWhite);
     padding: 56px 24px;
 
-    section{
+    @include helpers.xl{
+        padding: 100px 24px;
+    }
 
-        article{
-            
-            p{
-                margin-top: 24px;
-                margin-bottom: 24px;
+    #hero-content-container{
+
+        @include helpers.md{
+                display: grid;
+                grid-template-areas: "hero-img"
+                                    "hero-content";
+                // grid-template-columns: 50% auto;
+        }
+
+        @include helpers.xl{
+            grid-template-columns: 40% auto;
+            grid-template-areas: "hero-content hero-img";
+
+            max-width: 1200px;
+            margin: 0px auto;
+        }
+
+        section{
+            @include helpers.md{
+                grid-area: hero-content;
+                padding: 0px 15vw;
             }
 
-            a:link, a:visited{
-                // background-color: var(--nightBlue);
-                // color: var(--white);
-                // font-size: helpers.rem-calc(14);
-                // font-weight: 600;
-                // padding: 22px 36px;
-                // border-radius: 6px;
-
-                // // code for week 4
-                // display: inline-block;
+            @include helpers.lg{
+                padding: 0px 25vw;
             }
-            a:hover, a:focus{
+
+            @include helpers.xl{
+                padding: 0px;
+            }
+
+            article{
                 
+                p{
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
+
+                a:link, a:visited{
+                    // background-color: var(--nightBlue);
+                    // color: var(--white);
+                    // font-size: helpers.rem-calc(14);
+                    // font-weight: 600;
+                    // padding: 22px 36px;
+                    // border-radius: 6px;
+
+                    // // code for week 4
+                    // display: inline-block;
+                }
+                a:hover, a:focus{
+                    
+                }
+
+                button{
+                    background-color: var(white);
+                    border: none;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 100%;
+                    margin-left: 30px;
+                }
             }
 
-            button{
-                background-color: var(white);
-                border: none;
-                height: 60px;
-                width: 60px;
-                border-radius: 100%;
-                margin-left: 30px;
+            #hero-card{
+                background-color: var(--snowDrop);
+                margin-top: 70px;
+                padding: 24px 20px;
+                border-radius: 12px;
+
+                h5{
+                    color: var(--nightBlue);
+                    font-weight: 600;
+                    font-size: helpers.rem-calc(14);
+                }
+
+                p{
+                    font-size: helpers.rem-calc(14);
+                    font-weight: 600;
+                    // line-height: helpers.rem-calc(24);
+                }
             }
         }
 
-        #hero-card{
-            background-color: var(--snowDrop);
-            margin-top: 70px;
-            padding: 24px 20px;
-            border-radius: 12px;
-
-            h5{
-                color: var(--nightBlue);
-                font-weight: 600;
-                font-size: helpers.rem-calc(14);
-            }
-
-            p{
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-                // line-height: helpers.rem-calc(24);
+        aside{
+            @include helpers.md{
+                grid-area: hero-img;
             }
         }
     }
 
-    aside{
 
-    }
 }
