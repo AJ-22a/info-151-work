@@ -4,16 +4,12 @@
 @use "../helpers";
 
 #newsletter{
-    padding: 40px 24px;
     
     #newsletter-content{
         background-color: var(--lilyWhite);
         padding: 60px 16px;
 
         p{
-            color: var(--grey);
-            font-weight: 600;
-            line-height: helpers.rem-calc(28);
             margin: 16px 0px;
         }
 

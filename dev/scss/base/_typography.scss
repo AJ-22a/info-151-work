@@ -13,6 +13,12 @@ body{
     line-height: helpers.rem-calc(65);
 }
 
+.body-grey-text {
+    color: var(--grey);
+    font-weight: 600;
+    line-height: helpers.rem-calc(28);
+}
+
 //    .open-sans-<uniquifier> {
 //        font-family: "Open Sans", sans-serif;
 //        font-optical-sizing: auto;

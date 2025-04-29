@@ -4,37 +4,27 @@
 @use "../helpers";
 
 #about{
-    margin: 60px 24px;
+    padding: 40px 24px;
 
-    h1{
-        margin-bottom: 16px;
-    }
-
-    p{
-        color: var(--grey);
-        font-size: helpers.rem-calc(16);
-        font-weight: 600;
-        line-height: helpers.rem-calc(28);
-    }
-
-    #about-content{
+    section{
+        .about-p {
+            margin: 24px 0px 48px;
+        }
 
         ul{
-
             li{
-                margin-top: 16px;
-
-                h3{
+                h2{
                     color: var(--nightBlue);
                     font-size: helpers.rem-calc(20);
                     font-weight: 600;
-                    line-height: 28px;
+                    margin-bottom: 8px;
                 }
             }
         }
     }
-
-    .about-img{
+    
+    aside{
         margin-top: 68px;
     }
+
 }
