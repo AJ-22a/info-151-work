@@ -783,6 +783,19 @@ textarea {
 #newsletter #newsletter-content #newsletter-left p {
   margin: 16px 0px;
 }
+@media (min-width: 768px) {
+  #newsletter #newsletter-content #newsletter-left form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: var(--white);
+    border-radius: 8px;
+  }
+}
 #newsletter #newsletter-content #newsletter-left form input {
   border: none;
   color: var(--grey);
@@ -793,6 +806,11 @@ textarea {
           box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #newsletter #newsletter-content #newsletter-left form input {
+    margin-bottom: 0;
+  }
 }
 #newsletter #newsletter-content #newsletter-left form ::-webkit-input-placeholder {
   color: var(--grey);
