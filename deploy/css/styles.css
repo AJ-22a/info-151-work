@@ -558,12 +558,38 @@ textarea {
 #packages #top-content {
   text-align: center;
 }
+@media (min-width: 768px) {
+  #packages #top-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  #packages #top-content {
+    margin-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #packages #top-content {
+    width: 1200px;
+    margin: 0 auto 70px;
+  }
+}
 #packages #top-content #package-button-container {
   background-color: var(--white);
   display: inline-block;
   margin: 24px 0px;
   padding: 8px;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  #packages #top-content #package-button-container {
+    margin-left: auto;
+  }
 }
 #packages #top-content #package-button-container button {
   border: none;
@@ -620,23 +646,42 @@ textarea {
   line-height: 1.75rem;
   margin: 20px 0px 16px;
 }
-#packages #package-card-container .package-card .user-icons li {
+#packages #package-card-container .package-card .package-status-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#packages #package-card-container .package-card .package-status-bar .user-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#packages #package-card-container .package-card .package-status-bar .user-icons li {
   height: 36px;
   width: 36px;
   border: 1px solid var(--white);
   border-radius: 100%;
+  margin-right: -15px;
 }
-#packages #package-card-container .package-card h4 {
+#packages #package-card-container .package-card .package-status-bar h4 {
   color: var(--grey);
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.75rem;
+  margin-left: 20px;
 }
-#packages #package-card-container .package-card h3 {
+#packages #package-card-container .package-card .package-status-bar h3 {
   color: var(--aqua);
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.75rem;
+  margin-left: auto;
 }
 #packages #package-card-container .selected {
   background-color: var(--white);
