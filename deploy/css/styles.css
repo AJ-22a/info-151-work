@@ -374,6 +374,14 @@ body {
   font-size: 3.125rem;
   line-height: 4.0625rem;
 }
+.section-title span {
+  position: relative;
+}
+.section-title span img {
+  position: absolute;
+  top: 0;
+  left: 6px;
+}
 
 .body-grey-text {
   color: var(--grey);
