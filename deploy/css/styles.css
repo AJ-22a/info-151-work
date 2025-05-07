@@ -867,6 +867,21 @@ textarea {
     margin: 0px auto;
   }
 }
+@media (min-width: 768px) {
+  #communication #communication-content #communication-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  #communication #communication-content #communication-title #communication-first-title {
+    margin-right: 16px;
+  }
+}
 #communication #communication-content p {
   margin: 24px 0px 48px;
 }
@@ -1127,6 +1142,16 @@ textarea {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+}
+#about section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#about section ul li img {
+  margin-right: 15px;
+  height: 60px;
+  width: 60px;
 }
 #about section ul li h2 {
   color: var(--nightBlue);

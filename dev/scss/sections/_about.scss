@@ -34,6 +34,14 @@
             }
 
             li{
+                display: flex;
+
+                img{
+                    margin-right: 15px;
+                    height: 60px;
+                    width: 60px;
+                }
+
                 h2{
                     color: var(--nightBlue);
                     font-size: helpers.rem-calc(20);

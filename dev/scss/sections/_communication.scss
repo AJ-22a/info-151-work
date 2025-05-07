@@ -13,6 +13,19 @@
             margin: 0px auto;
         }
 
+        #communication-title{
+            @include helpers.md{
+                display: flex;
+                justify-content: center;
+            }
+
+            #communication-first-title{
+                @include helpers.md{
+                    margin-right: 16px;
+                }
+            }
+        }
+
         p{
             margin: 24px 0px 48px;
 
