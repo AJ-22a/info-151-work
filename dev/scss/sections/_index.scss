@@ -1,0 +1,63 @@
+/* =============
+    Home
+============= */
+@use "../helpers";
+
+body {
+    background-color: var(--midGrey);
+}
+
+.home-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2C3E50;
+  margin-bottom: 2rem;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  .info-box {
+    flex: 1 1 200px;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: #FDF6EC;
+    border: 2px solid #D9CBB3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;       
+    text-align: center;           
+
+    p {
+        font-size: 1.7rem;
+    }
+  }
+}
+
+.profile-picture-container {
+    flex: 0 1 200px;
+    text-align: center;
+
+    .profile-picture {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 40% 20%;
+        border-radius: 50%;
+        border: 4px solid #3498DB;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
