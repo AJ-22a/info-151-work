@@ -322,6 +322,8 @@ template {
   --lightGrey: #ECF0F1;
   --charcoal: #333333;
   --red: #E74C3C;
+  --lightBeige: #FDF6EC;
+  --darkBeige: #D9CBB3;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -456,8 +458,10 @@ body {
 .home-heading {
   text-align: center;
   font-size: 2.5rem;
-  color: #2C3E50;
+  color: var(--midnightNavy);
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
 }
 
 .home-container {
@@ -470,7 +474,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2rem;
@@ -481,8 +484,8 @@ body {
           flex: 1 1 200px;
   max-width: 300px;
   padding: 2rem 1rem;
-  background-color: #FDF6EC;
-  border: 2px solid #D9CBB3;
+  background-color: var(--lightBeige);
+  border: 2px solid var(--darkBeige);
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -522,4 +525,154 @@ body {
 .profile-picture-container p {
   font-size: 2rem;
   font-weight: 700;
+  color: var(--midnightNavy);
+}
+
+/* =============
+    About
+============= */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-container .about-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-container .about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(147, 112, 219, 0.4), transparent);
+  padding: 10px;
+  -webkit-box-shadow: 0 0 40px rgba(147, 112, 219, 0.6);
+          box-shadow: 0 0 40px rgba(147, 112, 219, 0.6);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.about-container .about-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+}
+.about-container .about-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--midnightNavy);
+  margin-bottom: 2rem;
+}
+.about-container .about-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-container .about-content li {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* =============
+    Resume
+============= */
+.resume-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.resume-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  color: #2C3E50;
+}
+
+.resume-download {
+  background: #3498DB;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+
+.resume-download:hover {
+  background: #2A80BA;
+}
+
+.resume-block {
+  margin-bottom: 2rem;
+}
+
+.resume-block h2 {
+  font-size: 1.5rem;
+  color: #2C3E50;
+  margin-bottom: 0.5rem;
+}
+
+.resume-block ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  background: #ECF0F1;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }

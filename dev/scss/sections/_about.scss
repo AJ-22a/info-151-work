@@ -1,0 +1,60 @@
+/* =============
+    About
+============= */
+@use "../helpers";
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    .about-image {
+        flex: 1 1 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 300px;
+        height: auto;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(147,112,219,0.4), transparent);
+        padding: 10px;
+        box-shadow: 0 0 40px rgba(147, 112, 219, 0.6);
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .about-content {
+        flex: 1 1 400px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--midnightNavy);
+            margin-bottom: 2rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+        }
+    }
+
+    
+
+    
+
+}
+

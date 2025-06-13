@@ -10,15 +10,16 @@ body {
 .home-heading {
   text-align: center;
   font-size: 2.5rem;
-  color: #2C3E50;
+  color: var(--midnightNavy);
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
 }
 
 .home-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
   flex-wrap: wrap;
   gap: 2rem;
   
@@ -26,8 +27,8 @@ body {
     flex: 1 1 200px;
     max-width: 300px;
     padding: 2rem 1rem;
-    background-color: #FDF6EC;
-    border: 2px solid #D9CBB3;
+    background-color: var(--lightBeige);
+    border: 2px solid var(--darkBeige);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -59,5 +60,6 @@ body {
     p {
         font-size: 2rem;
         font-weight: 700;
+        color: var(--midnightNavy);
     }
 }
