@@ -11,6 +11,7 @@
     gap: 3rem;
     align-items: center;
     justify-content: center;
+    
 
     .about-image {
         flex: 1 1 300px;
@@ -25,14 +26,19 @@
         border-radius: 50%;
         background: radial-gradient(circle, rgba(147,112,219,0.4), transparent);
         padding: 10px;
-        box-shadow: 0 0 40px rgba(147, 112, 219, 0.6);
+        box-shadow: 0 0 60px rgba(147, 112, 219, 0.6);
         object-fit: cover;
         object-position: center top;
     }
 
     .about-content {
         flex: 1 1 400px;
-
+        background-color: var(--lightBeige);
+        border: 2px solid var(--darkBeige);
+        padding-left: 20px;
+        border-radius: 15px;
+        margin-top: 25px;
+    
         h1 {
             font-size: 3rem;
             font-weight: 700;

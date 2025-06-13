@@ -567,8 +567,8 @@ body {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(147, 112, 219, 0.4), transparent);
   padding: 10px;
-  -webkit-box-shadow: 0 0 40px rgba(147, 112, 219, 0.6);
-          box-shadow: 0 0 40px rgba(147, 112, 219, 0.6);
+  -webkit-box-shadow: 0 0 60px rgba(147, 112, 219, 0.6);
+          box-shadow: 0 0 60px rgba(147, 112, 219, 0.6);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center top;
@@ -578,6 +578,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
+  background-color: var(--lightBeige);
+  border: 2px solid var(--darkBeige);
+  padding-left: 20px;
+  border-radius: 15px;
+  margin-top: 25px;
 }
 .about-container .about-content h1 {
   font-size: 3rem;
@@ -674,8 +679,7 @@ body {
 ============= */
 .projects-section {
   max-width: 1000px;
-  margin: 3rem auto;
-  padding: 2rem;
+  margin: 1rem auto;
   font-family: "Segoe UI", sans-serif;
   color: #333;
 }
@@ -683,20 +687,20 @@ body {
   text-align: center;
   font-size: 2.5rem;
   color: #2c3e50;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .projects-section .project-category {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .projects-section .project-category h2 {
   font-size: 1.75rem;
   color: #2c3e50;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .projects-section .project-card {
   background-color: #f8f9fa;
   padding: 1.5rem;
-  border-left: 5px solid #3498db;
+  border-left: 7px solid #3498db;
   margin-bottom: 1.5rem;
   border-radius: 8px;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
@@ -717,4 +721,138 @@ body {
 }
 .projects-section .project-card a:hover {
   text-decoration: underline;
+}
+
+/* =============
+    Associations
+============= */
+.associations-section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+.associations-section h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+.associations-section .association-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+.associations-section .association-card {
+  background: #fdfdfd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.associations-section .association-card .isaca-logo {
+  height: 40px;
+  margin-top: 1.5rem;
+}
+.associations-section .association-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.associations-section .association-card h2 {
+  font-size: 1.25rem;
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+.associations-section .association-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+.associations-section .association-card a {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.associations-section .association-card a:hover {
+  background: #2a80ba;
+}
+.associations-section .association-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+/* =============
+    Contact
+============= */
+.contact-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  background: #fdfdfd;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.contact-email {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-email a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social-btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.github {
+  background: #333;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
 }
