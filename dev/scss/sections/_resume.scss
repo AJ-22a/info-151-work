@@ -3,6 +3,13 @@
 ============= */
 @use "../helpers";
 
+.resume-heading {
+    font-size: 2.5rem;
+    color: var(--midnightNavy);
+    justify-self: center;
+    margin-top: 1rem;
+}
+
 .resume-section {
   max-width: 900px;
   margin: 3rem auto;
@@ -24,8 +31,6 @@
             color: var(--midnightNavy);
         }
     }
-
-    
 
     .resume-download {
         background: #3498DB;
