@@ -8,6 +8,17 @@ AOS.init({
   mirror: true
 });
 
+// Types Import
+import Typed from 'typed.js';
+
+document.addEventListener("DOMContentLoaded", () => {
+  const typed = new Typed("#element", {
+    strings: ["Welcome to my Portfolio!"],
+    typeSpeed: 100,
+  });
+});
+
+
 // Hamburger Menu Code
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burger");
