@@ -5,14 +5,12 @@
 
 .associations-section {
     max-width: 1000px;
-    margin: 3rem auto;
-    padding: 2rem;
-    font-family: 'Segoe UI', sans-serif;
+    margin: 1rem auto;
     text-align: center;
     
     h1 {
         font-size: 2.5rem;
-        color: #2c3e50;
+        color: var(--midnightNavy);
         margin-bottom: 2rem;
     }
 
@@ -24,7 +22,7 @@
     }
 
     .association-card {
-        background: #fdfdfd;
+        background: var(--lightBeige);
         border-radius: 10px;
         padding: 1.5rem;
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -43,14 +41,14 @@
 
         h2 {
             font-size: 1.25rem;
-            color: #3498db;
+            color: var(--midnightNavy);
             margin-bottom: 0.5rem;
         }
 
         p {
             font-size: 0.95rem;
             margin-bottom: 1rem;
-            color: #444;
+            color: var(--midnightNavy)
         }
 
         a {
