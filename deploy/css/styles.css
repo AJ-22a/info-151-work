@@ -763,10 +763,6 @@ body {
   padding: 1.5rem;
   -webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
           box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .associations-section .association-card .isaca-logo {
   height: 40px;
@@ -783,9 +779,14 @@ body {
   margin-bottom: 0.5rem;
 }
 .associations-section .association-card p {
-  font-size: 0.95rem;
+  font-size: 0.5rem;
   margin-bottom: 1rem;
   color: var(--midnightNavy);
+}
+@media (min-width: 576px) {
+  .associations-section .association-card p {
+    font-size: 0.95rem;
+  }
 }
 .associations-section .association-card a {
   display: inline-block;
