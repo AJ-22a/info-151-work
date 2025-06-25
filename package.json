@@ -4,6 +4,9 @@
   "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
   "dependencies": {
     "aos": "^2.3.4",
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "tailwindcss": "^4.1.10",
     "typed.js": "^2.1.0"
   }
 }
