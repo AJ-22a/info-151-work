@@ -1,14 +1,14 @@
-//AOS Import
+// AOS Import //
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css'; 
+
 AOS.init({
   duration: 1000,
   once: false,
   mirror: true
 });
 
-// Types Import
+// Types Import //
 import Typed from 'typed.js';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Hamburger Menu Code
+// Hamburger Menu Code //
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.getElementById("burger");
   const navLinks = document.getElementById("nav-links");
